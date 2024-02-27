@@ -3,3 +3,7 @@ export function blob(strings, arg) {
     type: arg,
   });
 }
+
+export function size(blob) {
+  return blob.size;
+}

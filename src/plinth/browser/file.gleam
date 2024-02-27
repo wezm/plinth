@@ -12,3 +12,7 @@ pub fn name(file: File) -> String
 
 @external(javascript, "../../file_ffi.mjs", "mime")
 pub fn mime(file: File) -> String
+
+// File implements Blob so we can use Blob.size on it
+@external(javascript, "../../blob_ffi.mjs", "size")
+pub fn size(file: File) -> Int
